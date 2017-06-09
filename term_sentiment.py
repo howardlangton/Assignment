@@ -81,7 +81,7 @@ def main():
                 noterms[each_item]['value'] = float(posval) / float(abs(negval))
             else: 
                 noterms[each_item]['value'] = float(negval) / float(abs(posval))
-            print each_item.encode('utf-8') + " " + str(noterms[each_item]['value'])
+            print each_item.encode('utf-8').strip()," ",str(noterms[each_item]['value']).strip()
 
 if __name__ == '__main__':
     main()
